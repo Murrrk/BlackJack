@@ -29,7 +29,13 @@ public class Card {
         Card card1 = new Card(Suit.CLUBS,Rank.JACK);
         Card card2 = new Card(Suit.DIAMONDS,Rank.TEN);
 
+        System.out.println(card1);
+        System.out.println(card2);
+    }
 
+    @Override
+    public String toString() {
+        return this.rank.toString().concat(" ").concat(this.suit.toString());
     }
 
     public int getValue() {
