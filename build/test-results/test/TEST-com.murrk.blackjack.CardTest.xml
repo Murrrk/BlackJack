@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.murrk.blackjack.CardTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-09T11:22:30" hostname="DESKTOP-IFCI8AI" time="0.016">
+<testsuite name="com.murrk.blackjack.CardTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-09T11:40:38" hostname="DESKTOP-IFCI8AI" time="0.021">
   <properties/>
-  <testcase name="canGetValueOfAThreeCard()" classname="com.murrk.blackjack.CardTest" time="0.013"/>
-  <testcase name="canGetValueOfATwoCard()" classname="com.murrk.blackjack.CardTest" time="0.001"/>
-  <testcase name="canGetValueOfAnAceCard()" classname="com.murrk.blackjack.CardTest" time="0.0"/>
-  <testcase name="canGetValueOfAJackCard()" classname="com.murrk.blackjack.CardTest" time="0.0"/>
+  <testcase name="canGetValueOfAThreeCard()" classname="com.murrk.blackjack.CardTest" time="0.017"/>
+  <testcase name="canGetValueOfATwoCard()" classname="com.murrk.blackjack.CardTest" time="0.0"/>
+  <testcase name="canGetValueOfAnAceCard()" classname="com.murrk.blackjack.CardTest" time="0.001"/>
+  <testcase name="canGetValueOfAJackCard()" classname="com.murrk.blackjack.CardTest" time="0.001"/>
   <testcase name="canGetValueOfAKingCard()" classname="com.murrk.blackjack.CardTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
