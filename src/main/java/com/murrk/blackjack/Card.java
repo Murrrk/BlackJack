@@ -9,6 +9,11 @@ public class Card {
         this.rank = rank;
     }
 
+    public Card(String suit, String rank){
+        this.suit = Suit.valueOf(suit.toUpperCase());
+        this.rank = Rank.valueOf(rank.toUpperCase());
+    }
+
     public Suit getSuit() {
         return suit;
     }
@@ -26,19 +31,22 @@ public class Card {
     }
 
     public static void main(String[] args) {
-        Card card1 = new Card(Suit.CLUBS,Rank.JACK);
-        Card card2 = new Card(Suit.DIAMONDS,Rank.TEN);
+        System.out.println(drawCard());
+        System.out.println(drawCard().getValue());
 
-        System.out.println(card1);
-        System.out.println(card2);
     }
 
     @Override
     public String toString() {
-        return this.rank.toString().concat(" ").concat(this.suit.toString());
+        return this.suit.toString().concat(" ").concat(this.rank.toString());
     }
 
     public int getValue() {
         return this.rank.getValue();
+    }
+
+    public static Card drawCard(){
+        Card card = new Card(Suit.drawSuit(),Rank.drawRank());
+        return card;
     }
 }
