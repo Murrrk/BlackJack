@@ -1,5 +1,7 @@
 package com.murrk.blackjack;
 
+import java.util.Scanner;
+
 public class Card {
     private Suit suit;
     private Rank rank;
@@ -31,8 +33,26 @@ public class Card {
     }
 
     public static void main(String[] args) {
-        System.out.println(drawCard());
-        System.out.println(drawCard().getValue());
+        Scanner scan = new Scanner(System.in);
+
+        String playText = scan.nextLine();
+        int score = 0;
+
+        do {
+            if(playText.equals("tap"))
+            {
+                Card card = drawCard();
+                System.out.printf("Card: %s%n", card);
+                System.out.printf("Card value: %d%n", card.getValue());
+                score += card.getValue();
+                System.out.printf("Overall score: %d%n", score);
+
+            }
+            if(score > 21){
+                break;
+            }
+            playText = scan.nextLine();
+        }while (playText.equals("tap"));
 
     }
 
@@ -46,7 +66,6 @@ public class Card {
     }
 
     public static Card drawCard(){
-        Card card = new Card(Suit.drawSuit(),Rank.drawRank());
-        return card;
+        return new Card(Suit.drawSuit(),Rank.drawRank());
     }
 }
